@@ -394,3 +394,5 @@ doodle
 ```
 ### 3.5 在 Linux 平台完成以上步骤
 略，注意生成可执行文件和库文件的后缀，其他应该都是一样的
+
+Github源文件 [地址](https://github.com/DreamingPoet/LearnToCpp)
