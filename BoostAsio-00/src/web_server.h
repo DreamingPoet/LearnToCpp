@@ -1,6 +1,6 @@
 #pragma once
 
- #include <iostream>
+#include <iostream>
 #include <boost/asio.hpp>
 #include <string>
 
@@ -14,6 +14,8 @@ boost::asio::ip::tcp::endpoint endpoint(boost::asio::ip::tcp::v4(), 8080);
 boost::asio::ip::tcp::acceptor acceptor(io_service, endpoint);
 // 定义一个 sock io 对象
 boost::asio::ip::tcp::socket sock(io_service);
+
+// boost::asio::io_service::work work(io_service);
 
 // 定义 web_server 在接收到请求时的返回数据
 std::string data = "HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, world!";
@@ -52,6 +54,8 @@ void run_server()
     acceptor.async_accept(sock, accept_handler); 
 
     io_service.run();
+
+
 }
 
     

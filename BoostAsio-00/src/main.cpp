@@ -5,6 +5,7 @@
 // #include "test_timer4.h"
 // #include "test_socket1.h"
 #include "web_server.h"
+#include "async_func.h"
 
 int main(int argc, char *argv[]){
    
@@ -14,5 +15,6 @@ int main(int argc, char *argv[]){
     // test_timer4::start_timer();
     // test_socket1::run();
     web_server::run_server();
+    // async_func::start();
 
 }
